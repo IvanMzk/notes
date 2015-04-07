@@ -2,6 +2,8 @@ wi-fi
 DIO-guest
 zbst131tPub
 
+github - wasman
+
 статический вложенный класс ???
 
 
@@ -132,7 +134,7 @@ scrum, convin - user story - acceptance criteria
 usecase 1 - может быть на несколько unit test
 
 ctrl-shift-T junit4 - в том методе который надо тестить
-life tamplate для теста
+life template для теста
 
 
 rt.jar
