@@ -321,21 +321,102 @@ Event
 
 ServiceCalendar
 
-дефолтные значения для параметров метода
+дефолтные значения для параметров метода - нету, есть в рамках др. фреймворков базово нету.
+
+
+===========Lesson 8====================
+
+Spring
+
+power mock -  позволяет делать mock для final класса или метода, доступ к private полям
+when().then(...)
+verify - как правило для void метода, указать times-кол-во вызовов или другие matchers
+doThrow
+InOrder
+
+
+mock - пустой, задается только вход-выход для нужного метода
+stub - тоже что и spy (объект реализован, переопределяется только нужный метод)
+dammy - новый класс для эмуляции
+
+контекст приложения - можно создавать dammy объекты что бы не поднимать все приложение (н-р соединения с базой ...)
+
+DataStore - хранение данных не обязательно БД
+Repository - то же DataStore
+DAO - in database
+
+сохранение на файл.сист.JAXBean
+CalendarAdapter
+EventAdapter - для JAXBean
+
+Spring container - передача не класса а интерфеса
+
+создане UUID id вынести за builder - для тестов
+
+Spring -  Java enterprise 1.2 был до него (EJB)
+spring как упрощение модели
+уже много доп. библиотек
+
+
+-Core Container
+Context - содержит сущности - все они есть Beans
+Expression language - потоковая обработка текста - регулярные выражения
 
 
 
+AOP - astect oriented  progr
+Aspects
+AspectJ язык
+Например неявная проверка входных параметров метода
+
+ORM - Hibernate, JPA объектные базы
+
+OXM - xml
+
+JMS - java message system -отдельный jms service - кто-то  его получает есть topic - кто слушает тот получает
+queue- кто забрал другим не доступно
+
+Transactions - для методов тоже (надо определять rollback)
+
+MVC
+controller - управляет view и model
+
+
+JSP, JSF, Struts - Servlet
+
+Web portal - есть виджеты можно вкл. или отключать (виджет - Portlet)
+
+
+POJO бизнес объекты
+конфигурация для Spring - XML - Beans
+- property - field in object есть setter getter - установка через setter
+
+factory-method - static factory method
+factory beans - non static factory method - need instance
+
+
+- установка через конструктор - отдавать преимущество
+-установка через сеттер - часто для JDBC driver
+
+xml - id - зависит от регистра
+property и через конструктор не зависимы
 
 
 
+scope = prototype - везде где использ. - создается новый экземпляр
+по умолчанию singletone
 
+FileSystemXmlApplicationContext - указать где файл с конфигурацией
+ClassPathXmlApplicationContext - ищет сам
 
+.getBean()
+.registerShutdownHook - останавливающие ф-ции
 
+сигналы выхода из приложения
+System.exit(0) жесткий выход
+System.exit(1) gently выход
 
-
-
-
-
+init-method - метод инициализации
 
 
 
