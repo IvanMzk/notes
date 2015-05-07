@@ -546,6 +546,25 @@ static - не входит в состояние
 
 есть сторонние библиотеки для сериализации
 
+marshaller - преобразование в xml
+
+hw - сохранить в виде xml event
+
+NIO
+раньше был File
+новый класс Path
+Paths
+Files
+
+File walking - pattern Visitor
+
+можно добавить опции глубину поиска и следование по ссылке
+
+pattern adapter - event adapter - содержит аннотации JAXB  --для адаптации JAXB к builder Event
+
+
+base camp
+
 
 Команда 3
 
