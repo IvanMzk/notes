@@ -580,3 +580,25 @@ skype bsapko
 067 5313444
 
 
+Serialization для объектов агрегированных (поля) в другом при его сериализации делается?
+или нет - типа deep serialization
+
+
+JAXB - Java architecture for XML binding
+
+???JAXB полученные объекты от JAXBcompiler - это стаб? или ориджин объект
+изменение в объекте - влекут сразу изменение в XML или нужна маршализация
+
+
+1.Generate classes. An XML schema is used as input to the JAXB binding compiler to generate JAXB classes based on that schema.
+2.Compile classes. All of the generated classes, source files, and application code must be compiled.
+3.Unmarshall ...
+можно еще и описания классов в XML - ? - не только Java объекты - или что имеется ввиду в 1 и 2 пунктах
+
+
+JAXB provides methods for unmarshalling XML instance documents into Java content trees,
+and then marshalling Java content trees back into XML instance documents.
+JAXB also provides a way generate XML schema from Java objects. - в чем разница, что такое content tree
+
+
+
